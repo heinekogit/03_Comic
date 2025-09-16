@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package
+ xmlns="http://www.idpf.org/2007/opf"
+ version="3.0"
+ xml:lang="ja"
+ unique-identifier="bw-ecode"
+ prefix="rendition: http://www.idpf.org/vocab/rendition/#
+         ebpaj: http://www.ebpaj.jp/
+         fixed-layout-jp: http://www.digital-comic.jp/
+         kadokawa: http://www.kadokawa.co.jp/
+         access: http://www.access-company.com/2012/layout#
+         ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/"
+>
+
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<!-- 作品名 -->
+<dc:title id="title">●タイトル名●●話巻順番●</dc:title>
+<meta refines="#title" property="file-as">●タイトル名カタカナ●●話数3桁●</meta>
+
+<!-- 著者名 -->
+▼著者情報テキスト挿入位置▼
+
+<!-- 出版社名 -->
+<dc:publisher id="publisher">●出版社名●</dc:publisher>
+<meta refines="#publisher" property="file-as">●出版社名カタカナ●</meta>
+
+<!-- 言語 -->
+<dc:language>ja</dc:language>
+
+<!-- ファイルid -->
+<dc:identifier id="bw-ecode">00000000-0000-0000-0000-000000000000</dc:identifier>
+
+<!-- 更新日 -->
+<meta property="dcterms:modified">●作業日時●</meta>
+
+<!-- Fixed-Layout Documents指定 -->
+<meta property="rendition:layout">pre-paginated</meta>
+<meta property="rendition:spread">landscape</meta>
+<meta property="rendition:orientation">auto</meta>
+
+<!-- etc. -->
+<meta property="ebpaj:guide-version">1.1.2</meta>
+<meta property="kadokawa:version">1.0.1</meta>
+<meta property="ibooks:specified-fonts">true</meta>
+<meta property="ibooks:binding">false</meta>
+<meta name="book-type" content="comic"/>
+<meta name="original-resolution" content="1170x1600"/>
+<meta name="orientation-lock" content="none"/>
+<meta name="fixed-layout" content="true"/>
+<meta name="primary-writing-mode" content="horizontal-lr"/>
+
+<!-- 基準サイズ -->
+<meta property="fixed-layout-jp:viewport">width=●基準幅●, height=●基準高●</meta>
+
+
+</metadata>
+
+<manifest>
+
+<!-- navigation -->
+<item media-type="application/xhtml+xml" id="toc" href="navigation-documents.xhtml" properties="nav"/>
+<item media-type="application/x-dtbncx+xml" id="ncx" href="toc.ncx"/>
+
+<!-- style -->
+<item media-type="text/css" id="fixed-layout-jp" href="style/fixed-layout-jp.css"/>
+<item media-type="text/css" id="book-style"      href="style/book-style.css"/>
+<item media-type="text/css" id="style-reset"     href="style/style-reset.css"/>
+<item media-type="text/css" id="style-standard"  href="style/style-standard.css"/>
+<item media-type="text/css" id="style-advance"   href="style/style-advance.css"/>
+<item media-type="text/css" id="style-check"     href="style/style-check.css"/>
+
+<!-- image -->
+<item media-type="image/jpeg" id="i-cover" href="image/i-cover.jpg" properties="cover-image"/>
+▼画像ファイルタグ印字位置▼
+<item media-type="image/jpeg" id="i-colophon" href="image/i-colophon.jpg"/>
+
+<!-- xhtml -->
+<item media-type="application/xhtml+xml" id="p-cover" href="xhtml/p-cover.xhtml" properties="svg" fallback="i-cover"/>
+▼xhtmlファイルタグ印字位置▼
+<item media-type="application/xhtml+xml" id="p-colophon" href="xhtml/p-colophon.xhtml" properties="svg" fallback="i-colophon"/>
+
+</manifest>
+
+<spine page-progression-direction="●読み方向●" toc="ncx">
+<itemref linear="yes" idref="p-cover" properties="rendition:page-spread-center"/>
+▼spineタグ印字位置▼
+
+</spine>
+
+</package>
+

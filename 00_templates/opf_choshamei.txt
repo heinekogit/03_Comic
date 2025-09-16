@@ -1,0 +1,5 @@
+<dc:creator id="creator0▼作家順番▼">●作家名●</dc:creator>
+<meta refines="#creator0▼作家順番▼" property="role" scheme="marc:relators">aut</meta>
+<meta refines="#creator0▼作家順番▼" property="file-as">●作家名カタカナ●</meta>
+<meta refines="#creator0▼作家順番▼" property="display-seq">▼作家順番▼</meta>
+

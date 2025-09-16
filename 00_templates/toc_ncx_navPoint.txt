@@ -1,0 +1,4 @@
+<navPoint id="●navPoint_id●" playOrder="▼playOrder順番▼">
+<navLabel><text>●目次項目●</text></navLabel>
+<content src="xhtml/●xhtmlファイル名●"/>
+</navPoint>
